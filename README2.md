@@ -15,17 +15,17 @@ Each function takes a `db` argument, which is a cursor connected to the database
 ### Detailed movies
 
 - Implemented `detailed_movies` to get all the movie titles with the corresponding genre and director name.
-- This function should return a list of tuples like (`title`, `genre`, `name`).
+- This function returns a list of tuples like (`title`, `genre`, `name`).
 
 ### Late released movies
 
 -  Implemented `never_watched_movies` to get the list of all movies which were released after their director passed away.
-- This function should return a list of movie `titles`.
+- This function returns a list of movie `titles`.
 
 ### Statistics
 
 - Implemented `stats_on` to get the statistics on a given genre, i.e. the number of movies and the average movie length (in minutes).
-- This function should return a dictionary of statistics like:
+- This function returns a dictionary of statistics like:
 
 ```python
 results = stats_on(db, "Action,Adventure,Comedy")
@@ -40,7 +40,7 @@ print(results)
 ### Top 5
 
 - Implemented `top_five_directors_for` to get the top 5 directors that made the most movies for a given genre.
-- This function should return a list of tuples like (`name`, `number_of_movies`).
+- This function returns a list of tuples like (`name`, `number_of_movies`).
 - In case of a tie, directors should be sorted in alphabetical order.
 
 ```python
@@ -72,5 +72,5 @@ movie_duration_buckets(db)
 
 ### Top 5 youngest newly directors
 
-- Implement `top_five_youngest_newly_directors` to get the top 5 youngest directors when directing their first movie.
-- This function should return a list of tuples like (`name`, `age_when_first_time_director`).
+- Implemented `top_five_youngest_newly_directors` to get the top 5 youngest directors when directing their first movie.
+- This function returns a list of tuples like (`name`, `age_when_first_time_director`).
